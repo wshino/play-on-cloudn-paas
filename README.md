@@ -79,7 +79,7 @@ distする対象のzipを定義
 
 ````
 $ play clean compile
-$ dist -Dconfig.file=conf/cloud.conf dist
+$ play -Dconfig.file=conf/cloud.conf dist
 $ vmc push
 ````
 
