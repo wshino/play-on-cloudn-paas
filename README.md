@@ -20,6 +20,12 @@
 この一文がないとオートコネクションが動かない、と思う。
 使わないけど。
 
+また、resolverに以下を追加する。
+
+```
+resolvers += "Spring Milestone Repository" at "http://maven.springframework.org/milestone"
+```
+
 
 ## conf/cloud.conf
 
