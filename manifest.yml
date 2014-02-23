@@ -1,0 +1,13 @@
+---
+applications:
+- name: play-on-cloudn-paas
+  framework: play
+  runtime: java7
+  memory: 1G
+  instances: 1
+  url: play-on-cloudn-paas.${target-base}
+  path: dist/play-on-cloudn-paas-1.0-SNAPSHOT.zip
+  services:
+    tasks-db:
+      plan: free
+      type: mysql
