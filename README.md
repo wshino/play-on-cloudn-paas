@@ -74,6 +74,7 @@ distする対象のzipを定義
 # deploy
 
 *前提条件、vmcコマンドをinstallしておいてloginができる状態にしておくこと*
+
 *autoconfig=falseにしているのでDBは作成しておくこと*
 
 アプリケーションディレクトリで
