@@ -1,4 +1,4 @@
-# playframework 2.1.5 + slick2 with mysql を cloudn paas で動かす
+## playframework 2.1.5 + slick2 with mysql を cloudn paas で動かす
 
 ```
   val appDependencies = Seq(
