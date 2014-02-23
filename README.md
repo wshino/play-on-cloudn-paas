@@ -1,4 +1,6 @@
-## playframework 2.1.5 + slick2 with mysql を cloudn paas で動かす
+# playframework 2.1.5 + slick2 with mysql を cloudn paas で動かす
+
+## Build.scala
 
 ```
   val appDependencies = Seq(
@@ -15,10 +17,12 @@
 "org.cloudfoundry" % "auto-reconfiguration" % "0.6.6",
 ```
 
-この一文がないとオートコネクションが動かない。動かさないならいらないかも。
+この一文がないとオートコネクションが動かない、と思う。
+使わないけど。
 
 
-# conf/cloud.conf
+## conf/cloud.conf
+
 ````
 include "application.conf"
 include "cloudfoundry.properties"
@@ -31,7 +35,7 @@ db.default.user=${?cloud.services.{tasks-db}.connection.username}
 
 tasks-db の箇所はすでに存在している接続したいサービス名にしておく
 
-# conf/cloudfoundry.properties
+## conf/cloudfoundry.properties
 
 ```
 autoconfig=false
